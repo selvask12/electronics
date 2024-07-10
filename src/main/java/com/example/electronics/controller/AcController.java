@@ -67,8 +67,5 @@ public class AcController {
 	@GetMapping(value="/getDiscountPrice/{a}")
 	public List<Ac> getDiscount(@PathVariable int a) {
 		return acs.getDiscount(a);
-	}
-	
-	
-	
+	}	
 }

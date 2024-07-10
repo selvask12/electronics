@@ -58,9 +58,7 @@ public class AcService {
 	    List<Ac> x = acd.getAll();
 	    Ac maxPrice = x.stream()
 	                  .max(Comparator.comparing(Ac::getPrice))
-	                  .orElse(null); // Handle the case where the list is empty
-
-	    // Return 0 if maxPrice is null, otherwise return the max price
+	                  .orElse(null);
 	    return maxPrice.getPrice();
 }
 
